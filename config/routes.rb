@@ -1,5 +1,7 @@
 BusDetails::Application.routes.draw do
-  post 'board/:bus_no' => "bus#board", as: :board_bus
+  post 'board/:bus_number' => "bus#board", as: :board_bus
+  get 'locate/:bus_number' => "bus#locate", as: :locate_bus
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
